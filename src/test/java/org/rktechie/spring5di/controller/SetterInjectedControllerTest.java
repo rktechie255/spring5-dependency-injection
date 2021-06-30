@@ -2,9 +2,7 @@ package org.rktechie.spring5di.controller;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.rktechie.spring5di.org.rktechie.spring5di.services.GreetingServiceImpl;
-
-import static org.junit.jupiter.api.Assertions.*;
+import org.rktechie.spring5di.org.rktechie.spring5di.services.ConstructorGreetingServiceImpl;
 
 class SetterInjectedControllerTest {
 
@@ -13,7 +11,7 @@ class SetterInjectedControllerTest {
     @BeforeEach
     void setUp() {
         controller = new SetterInjectedController();
-        controller.setGreetingService(new GreetingServiceImpl());
+        controller.setGreetingService(new ConstructorGreetingServiceImpl());
     }
 
     @Test
