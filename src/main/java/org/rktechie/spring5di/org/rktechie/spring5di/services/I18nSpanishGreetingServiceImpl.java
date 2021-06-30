@@ -8,6 +8,6 @@ import org.springframework.stereotype.Service;
 public class I18nSpanishGreetingServiceImpl implements GreetingService {
     @Override
     public String displayGreeting() {
-        return "In spanish :- ¡Bienvenido al marco DI de Spring Boot español! ";
+        return "In spanish :- ¡Bienvenido al marco DI de Spring Boot español! " ;
     }
 }
